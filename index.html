@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios de venta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="sectionRegistro">
+        <div class="divRegistro">
+            <h1>Calculadora de Precios de venta</h1>
+
+            <div>
+                <label class="labelRegistro">Producto
+                    <input id="descripcion" class="inputRegistro" type="text" name="name" placeholder="Descripción" autocomplete="off" maxlength="20" required>
+                </label>
+            </div>
+
+            <div>
+                <label class="labelRegistro">Precio
+                    <input id="precio" class="inputRegistro" type="number" name="name" placeholder="Precio de costo" autocomplete="off" required>
+                </label>
+            </div>
+
+            <div >
+                <label class="labelRegistro" for="why">Facturación
+                    <select name="" id="impuesto">
+                        <option value="default">Selecciona una opción</option>
+                        <option>Remito</option>
+                        <option>Factura A (no gravado)</option>
+                        <option>Factura A (gravado)</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="resultado">
+                <p>Resultado</p>
+                <p  id="resultado">$ 0</p>
+            </div>
+
+            <button type="button"  class="registrar" id="registrar">registrar </button>
+        </div>
+
+
+
+
+        <div class="divRegistro">
+            <h2>Lista de productos</h2>
+           <table id="tablaRegistro">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Facturación</th>
+                    <th>Precio Venta</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+           </table>
+        </div>
+    </section>
+
+    <script src="funcionalidades.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>
